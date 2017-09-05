@@ -7,6 +7,10 @@ function changeToDo(position, newValue){
     todos[position] = newValue;
 }
 
+function deleteToDo(position, ){
+    todos.splice(position, 1);
+}
+
 function addToDos(todo){
     todos.push(todo);
     changeToDo(0,'changed');
